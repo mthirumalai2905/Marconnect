@@ -27,6 +27,56 @@ export function Chapters({ items }: { items: Chapter[] }) {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const wide = window.matchMedia("(min-width: 1081px)");
+    const still = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const nodes = refs.current.filter((node): node is HTMLElement => Boolean(node));
+    let frame = 0;
+
+    const clear = () => {
+      nodes.forEach((node) => {
+        node.style.transform = "";
+        node.style.opacity = "";
+      });
+    };
+
+    const update = () => {
+      frame = 0;
+      if (!wide.matches || still.matches) {
+        clear();
+        return;
+      }
+      const vh = window.innerHeight;
+      const center = vh / 2;
+      nodes.forEach((node) => {
+        const rect = node.getBoundingClientRect();
+        const d = Math.max(-1.4, Math.min(1.4, (rect.top + rect.height / 2 - center) / (vh * 0.62)));
+        const a = Math.abs(d);
+        const scale = 1 - 0.4 * Math.min(1, a) ** 1.2;
+        const tilt = -d * 26;
+        const arc = (1 - Math.cos(d * 0.85)) * 150;
+        node.style.transform = `perspective(1100px) translate3d(${arc.toFixed(1)}px, 0, 0) rotateX(${tilt.toFixed(2)}deg) scale(${scale.toFixed(3)})`;
+        node.style.opacity = Math.max(0.14, 1 - a * 0.62).toFixed(3);
+      });
+    };
+
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    wide.addEventListener("change", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      wide.removeEventListener("change", schedule);
+      clear();
+    };
+  }, []);
+
   return (
     <div className="chapters">
       <div className="chapters-media" aria-hidden="true">

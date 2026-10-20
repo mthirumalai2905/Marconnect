@@ -1081,8 +1081,20 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
 .chapters-bar { position: absolute; z-index: 2; left: 22px; right: 22px; bottom: 22px; height: 2px; background: rgba(255, 255, 255, 0.2); border-radius: 2px; overflow: hidden; }
 .chapters-bar i { position: absolute; inset: 0; background: #fff; transform-origin: left; transition: transform 1.2s var(--ease); }
 .chapters-list { list-style: none; margin: 0; padding: 0; }
-.chapters-list li { min-height: 78svh; display: flex; flex-direction: column; justify-content: center; opacity: 0.28; transition: opacity 0.9s var(--soft); }
-.chapters-list li.on { opacity: 1; }
+.chapters-list { perspective: 1100px; }
+.chapters-list li {
+  min-height: 42svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform-origin: 0% 50%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+.chapters-list li:first-child { margin-top: 24svh; }
+.chapters-list li:last-child { margin-bottom: 24svh; }
+.chapters-list h3 { transition: color 0.8s var(--soft); }
+.chapters-list li:not(.on) h3 { color: #4a5262; }
 .chapters-list h3 { margin: 12px 0 16px; font-size: clamp(32px, min(3.6vw, 7svh), 56px); line-height: 1.02; letter-spacing: -0.05em; font-weight: 500; }
 .chapters-list p { margin: 0; max-width: 42ch; font-size: clamp(17px, 1.3vw, 19px); color: var(--muted); }
 .chapters-tag { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); font-weight: 600; }
@@ -1194,7 +1206,8 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   .horizon li { min-height: 0; }
   .note { grid-template-columns: 1fr; gap: 6px; }
   .chapters-media { display: none; }
-  .chapters-list li { min-height: 0; padding: 36px 0; opacity: 1; border-top: 1px solid var(--line); }
+  .chapters-list li { min-height: 0; padding: 36px 0; opacity: 1; border-top: 1px solid var(--line); margin: 0 !important; }
+  .chapters-list li:not(.on) h3 { color: inherit; }
   .chapters-inline { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius); margin-bottom: 22px; }
 }
 @media (max-width: 720px) {
@@ -1324,7 +1337,7 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   .page-hero-inner { padding-top: calc(var(--header-h) + 12px); padding-bottom: 24px; }
   .page-title { max-width: 22ch; font-size: clamp(32px, 10.5svh, 60px); }
   .page-lead { margin-top: 12px; max-width: 64ch; font-size: 15px; }
-  .chapters-list li { min-height: 100svh; }
+  .chapters-list li { min-height: 60svh; }
   .product { min-height: 480px; }
 }
 
