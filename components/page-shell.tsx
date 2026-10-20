@@ -7,6 +7,7 @@ import { SiteFooter } from "./site-footer";
 
 type HeroProps = {
   crumb: string;
+  parent?: { href: string; label: string };
   kicker: string;
   title: React.ReactNode;
   lead: string;
@@ -29,7 +30,7 @@ export function PageShell({ children, close }: { children: React.ReactNode; clos
   );
 }
 
-export function PageHero({ crumb, kicker, title, lead, image, alt, position }: HeroProps) {
+export function PageHero({ crumb, parent, kicker, title, lead, image, alt, position }: HeroProps) {
   return (
     <section className="page-hero dark reveal-img" id="top">
       <img src={image} alt={alt} style={position ? { objectPosition: position } : undefined} />
@@ -37,6 +38,12 @@ export function PageHero({ crumb, kicker, title, lead, image, alt, position }: H
         <nav className="crumbs reveal" aria-label="Breadcrumb">
           <Link href="/">Home</Link>
           <span aria-hidden="true">/</span>
+          {parent && (
+            <>
+              <Link href={parent.href}>{parent.label}</Link>
+              <span aria-hidden="true">/</span>
+            </>
+          )}
           <span aria-current="page">{crumb}</span>
         </nav>
         <p className="kicker reveal d1">{kicker}</p>

@@ -72,9 +72,9 @@ export default function JournalPage() {
               <p>“This collaboration highlights Nornir HIVE’s versatility, even in a very demanding and challenging sector.”</p>
               <cite>Paal Kristian Levang, Nornir · 2023</cite>
             </blockquote>
-            <a className="btn btn-blue reveal d3" href="https://www.marconnect.no/post/marconnect-signs-cooperation-agreement-with-nornir" target="_blank" rel="noreferrer">
-              Read the original <span className="ar">↗</span>
-            </a>
+            <Link className="btn btn-blue reveal d3" href="/journal/nornir-partnership">
+              Read the full article <span className="ar">→</span>
+            </Link>
           </div>
         </article>
       </section>

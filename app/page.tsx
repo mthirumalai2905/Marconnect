@@ -309,22 +309,22 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="journal">
-            <a className="post reveal" href="https://www.marconnect.no/post/marconnect-signs-cooperation-agreement-with-nornir">
+            <Link className="post reveal" href="/journal/nornir-partnership">
               <div className="post-img"><img src="/img/marnet-ship.jpg" alt="" style={{ objectPosition: "50% 45%" }} /></div>
               <div className="post-body">
                 <div className="post-meta"><b>Partnership</b>31 March 2023</div>
                 <h3>MarConnect signs a cooperation agreement with Nornir.</h3>
                 <p>HIVE technology comes to the onboard wireless and the life-saving sensors.</p>
               </div>
-            </a>
-            <article className="post small reveal d1">
+            </Link>
+            <Link className="post small reveal d1" href="/industries">
               <div className="post-img"><img src="/img/industry-fishing.jpg" alt="" /></div>
               <div className="post-body">
                 <div className="post-meta"><b>From Norway</b>Sykkulven</div>
                 <h3>Built for fishing, shipping and offshore.</h3>
                 <p>Moving hard maritime work from analog tools to digital, automated operations.</p>
               </div>
-            </article>
+            </Link>
           </div>
         </section>
 
