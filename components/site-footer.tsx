@@ -5,13 +5,14 @@ export function SiteFooter() {
     <footer className="footer dark">
       <div className="footer-top">
         <div>
-          <div className="footer-brand">MarConnect</div>
+          <div className="footer-brand">MarNet</div>
           <p>Life is the most valuable thing at sea. Norwegian technology for the oldest risk on the water.</p>
         </div>
         <div>
           <h4>Products</h4>
           <Link href="/products#marsurvive">MarSurvive</Link>
-          <Link href="/products#marnet">MarNet</Link>
+          <Link href="/products#marconnect">MarConnect</Link>
+          <Link href="/products#gateways">Gateways</Link>
           <Link href="/how-it-works">How it works</Link>
         </div>
         <div>
@@ -27,9 +28,9 @@ export function SiteFooter() {
           <address>Dalevegen 19, 6230 Sykkulven</address>
         </div>
       </div>
-      <div className="wordmark" aria-hidden="true">MarConnect</div>
+      <div className="wordmark" aria-hidden="true">MarNet</div>
       <div className="fine">
-        <span>© {new Date().getFullYear()} MarConnect AS</span>
+        <span>© {new Date().getFullYear()} MarNet AS</span>
         <span>Imagery is illustrative. The overboard story is a scenario.</span>
       </div>
     </footer>

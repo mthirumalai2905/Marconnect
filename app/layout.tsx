@@ -12,9 +12,9 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "MarConnect | Life is the most valuable thing at sea",
+  title: "MarNet | Life is the most valuable thing at sea",
   description:
-    "Norwegian maritime safety technology. MarSurvive sits on the life jacket and wakes in the water with light and position. MarNet tells the ship.",
+    "Norwegian maritime safety technology. MarSurvive for scuba divers and crews at sea, MarConnect for children and pets. Light and position when it matters.",
 };
 
 export const viewport: Viewport = {

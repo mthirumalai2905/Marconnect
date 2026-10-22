@@ -8,12 +8,12 @@ import { ScrollFill } from "@/components/scroll-fill";
 import { UseCases } from "@/components/use-cases";
 
 const lines = [
-  ["Life is the most valuable thing there is.", "MarConnect"],
-  ["Precaution is better than cure.", "MarConnect"],
-  ["The unit is on the life jacket before anyone is in the water.", "MarConnect"],
+  ["Life is the most valuable thing there is.", "MarNet"],
+  ["Precaution is better than cure.", "MarNet"],
+  ["The unit is on before anyone is in the water.", "MarNet"],
   ["Their Morph Space technology enables our delivery with high reliability, precision and efficiency.", "Jakob Flovikholm, 2023"],
   ["This collaboration highlights Synx Morph Space’s versatility, even in a very demanding sector.", "Paal Kristian Levang, Synx"],
-  ["Find them while it still matters.", "MarConnect"],
+  ["Find them while it still matters.", "MarNet"],
 ];
 
 const steps = [
@@ -24,14 +24,13 @@ const steps = [
 ];
 
 const benefits = [
-  "Embedded in the life jacket, worn at the chest or upper arm",
-  "Wakes automatically on contact with water",
-  "A light the rescuers can see in the dark",
-  "A position the ship and search and rescue can act on",
+  "Embedded in the life jacket at the chest or upper arm, or worn on the dive vest",
+  "Made for scuba divers, fishermen and everyone who works at sea",
+  "A light the rescuers can see in the dark, and a position they can act on",
   "Radio units on 433 and 868 MHz, located by gateways on the boat or on land",
   "Satellite units that report their position directly, far from any gateway",
   "Nothing on the wrist to snag during hands-on work",
-  "A wristband version made for children",
+  "MarConnect, a wristband for children and pets",
 ];
 
 export default function HomePage() {
@@ -57,12 +56,12 @@ export default function HomePage() {
           </div>
           <div className="hero-inner">
             <div className="hero-copy">
-              <p className="kicker reveal">MarSurvive · MarNet</p>
+              <p className="kicker reveal">MarSurvive · MarConnect</p>
               <h1 className="h-xl reveal d1">
                 Life is the most <span className="grad">valuable</span> thing at sea.
               </h1>
               <p className="hero-sub reveal d2">
-                Precaution is better than cure. MarSurvive sits on the life jacket before anyone goes near the rail. If they go in, it lights up and tells the ship exactly where they are.
+                Precaution is better than cure. MarSurvive goes on the life jacket or the dive vest before anyone is in the water. When it matters, it lights up and tells the boat exactly where they are.
               </p>
               <div className="hero-cta reveal d3">
                 <Link className="btn btn-light" href="/how-it-works">
@@ -75,8 +74,8 @@ export default function HomePage() {
             </div>
             <div className="hero-foot reveal d3">
               <div>
-                <strong>On the life jacket</strong>
-                Chest or upper arm
+                <strong>Divers and crew</strong>
+                Life jacket or dive vest
               </div>
               <div>
                 <strong>Wakes in water</strong>
@@ -224,19 +223,19 @@ export default function HomePage() {
           <div className="head">
             <div>
               <p className="kicker reveal">The system</p>
-              <h2 className="h-lg reveal d1">One for the person.<br />One for the ship.</h2>
+              <h2 className="h-lg reveal d1">For the ones at sea.<br />For the ones you love.</h2>
             </div>
-            <p className="lead reveal d2">MarSurvive finds the person. MarNet tells the ship. Together, the difference between a guess and a place.</p>
+            <p className="lead reveal d2">MarSurvive is for divers and everyone who works on the water. MarConnect is a wristband for children and pets. MarNet gateways tell the boat where they are.</p>
           </div>
           <div className="products">
             <article className="product reveal">
               <img src="/img/hero-unit.jpg" alt="The MarSurvive unit on the chest strap of a life jacket" style={{ objectPosition: "68% 50%" }} />
               <div>
                 <span className="label">MarSurvive</span>
-                <h3>The person.</h3>
+                <h3>Divers and crew.</h3>
               </div>
               <div>
-                <p>A safety unit embedded in the life jacket. On contact with water it gives light and position. Choose a low-power radio unit or a unit with direct satellite communication.</p>
+                <p>A safety unit for scuba divers, fishermen and workers, on the life jacket or the dive vest. It gives light and position. Choose a low-power radio unit or a unit with direct satellite communication.</p>
                 <ul>
                   <li>Wakes in water</li>
                   <li>Light and position</li>
@@ -247,20 +246,20 @@ export default function HomePage() {
               </div>
             </article>
             <article className="product reveal d1">
-              <img src="/img/gateway.jpg" alt="A MarNet gateway on the mast of a fishing vessel at blue hour" />
+              <img src="/img/kids-pets.jpg" alt="A child and a dog on a fjord boat, both wearing the MarConnect band with a blue light" style={{ objectPosition: "50% 55%" }} />
               <div>
-                <span className="label">MarNet</span>
-                <h3>The ship.</h3>
+                <span className="label">MarConnect</span>
+                <h3>Kids and pets.</h3>
               </div>
               <div>
-                <p>Gateways and sensors across the vessel. MarNet hears the radio units, places them on the water, and gives decision makers live data at sea and ashore.</p>
+                <p>A small wristband for children, and a band for the dog’s collar. Ferries, family boats and holidays on the water. If they go in, the boat knows where.</p>
                 <ul>
-                  <li>Gateways</li>
-                  <li>Triangulated position</li>
-                  <li>Sensor network</li>
-                  <li>Peer-to-peer</li>
+                  <li>Wristband for children</li>
+                  <li>Collar band for pets</li>
+                  <li>Light and position</li>
+                  <li>Family boats and ferries</li>
                 </ul>
-                <Link className="btn btn-glass" href="/products#marnet">Explore MarNet <span className="ar">→</span></Link>
+                <Link className="btn btn-glass" href="/products#marconnect">Explore MarConnect <span className="ar">→</span></Link>
               </div>
             </article>
           </div>
@@ -313,7 +312,7 @@ export default function HomePage() {
               <div className="post-img"><img src="/img/marnet-ship.jpg" alt="" style={{ objectPosition: "50% 45%" }} /></div>
               <div className="post-body">
                 <div className="post-meta"><b>Partnership</b>31 March 2023</div>
-                <h3>MarConnect signs a cooperation agreement with Synx.</h3>
+                <h3>MarNet signs a cooperation agreement with Synx.</h3>
                 <p>Morph Space technology comes to the onboard wireless and the life-saving sensors.</p>
               </div>
             </Link>
@@ -321,7 +320,7 @@ export default function HomePage() {
               <div className="post-img"><img src="/img/industry-fishing.jpg" alt="" /></div>
               <div className="post-body">
                 <div className="post-meta"><b>From Norway</b>Sykkulven</div>
-                <h3>Built for fishing, shipping and offshore.</h3>
+                <h3>Built for diving, fishing, shipping and offshore.</h3>
                 <p>Moving hard maritime work from analog tools to digital, automated operations.</p>
               </div>
             </Link>

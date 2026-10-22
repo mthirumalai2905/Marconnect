@@ -13,12 +13,20 @@ export const cases = [
     body: "The unit rides on the life jacket, not the wrist, so it never catches in a net. If someone goes over, it wakes in the water and the crew is told without waiting for a witness.",
   },
   {
+    slug: "diving",
+    title: "Diving",
+    image: "/img/diver-surface.jpg",
+    alt: "A scuba diver at the surface at dusk with the MarSurvive unit glowing on the dive vest",
+    note: "A head at the surface. A boat that is too far away.",
+    body: "MarSurvive rides on the dive vest. If a diver comes up away from the boat, in current or poor light, the boat gets a light to look for and a position to go to.",
+  },
+  {
     slug: "shipping",
     title: "Global shipping",
     image: "/img/industry-shipping.jpg",
     alt: "A container ship crossing open ocean at blue hour",
     note: "Crew and passengers. A place, not a rumour.",
-    body: "A crew member in the water is a light and a position. MarNet gateways place them, even on a ship that was never built to be digital.",
+    body: "A crew member in the water is a light and a position. Far from land, the satellite unit reports on its own, even from a ship that was never built to be digital.",
   },
   {
     slug: "offshore",

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Motto, NextPage, PageHero, PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "Journal: news and notes | MarConnect",
-  description: "Partnerships, explainers and notes on rescue, shipboard wireless and what MarConnect is building next.",
+  title: "Journal: news and notes | MarNet",
+  description: "Partnerships, explainers and notes on rescue, shipboard wireless and what MarNet is building next.",
 };
 
 const notes = [
@@ -18,8 +18,8 @@ const notes = [
   {
     tag: "Design",
     title: "Why it lives on the life jacket.",
-    text: "Nothing on the wrist to catch in a line. The wristband is for children.",
-    href: "/products#kids",
+    text: "Nothing on the wrist to catch in a line. The wristband, MarConnect, is for children and pets.",
+    href: "/products#marconnect",
     image: "/img/step-sleep.jpg",
   },
   {
@@ -57,16 +57,16 @@ export default function JournalPage() {
           </figure>
           <div className="feature-copy">
             <div className="post-meta reveal"><b>Partnership</b>31 March 2023</div>
-            <h2 className="h-md reveal d1">MarConnect signs a cooperation agreement with Synx.</h2>
+            <h2 className="h-md reveal d1">MarNet signs a cooperation agreement with Synx.</h2>
             <p className="reveal d2">
-              MarConnect has entered into an agreement with the Norwegian IoT network provider Synx to use their Morph Space technology in onboard wireless communication, including life-saving sensor technology.
+              MarNet has entered into an agreement with the Norwegian IoT network provider Synx to use their Morph Space technology in onboard wireless communication, including life-saving sensor technology.
             </p>
             <p className="reveal d2">
-              MarNet uses a sensor network so people at sea and on land get live information, and enables peer-to-peer communication across existing systems, machinery and equipment. That means existing and new ships can be digitised and, over time, support autonomous shipping.
+              The MarNet network uses sensors so people at sea and on land get live information, and enables peer-to-peer communication across existing systems, machinery and equipment. That means existing and new ships can be digitised and, over time, support autonomous shipping.
             </p>
             <blockquote className="pull reveal d3">
               <p>“Their Morph Space technology enables our delivery of products and services with high reliability, precision and efficiency.”</p>
-              <cite>Jakob Flovikholm, MarConnect · 2023</cite>
+              <cite>Jakob Flovikholm, MarNet · 2023</cite>
             </blockquote>
             <blockquote className="pull reveal d3">
               <p>“This collaboration highlights Synx Morph Space’s versatility, even in a very demanding and challenging sector.”</p>

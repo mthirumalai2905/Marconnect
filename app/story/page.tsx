@@ -3,8 +3,8 @@ import { Chapters, type Chapter } from "@/components/chapters";
 import { Motto, NextPage, PageHero, PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "The story: the one who went over the rail | MarConnect",
-  description: "A scenario told so anyone can understand MarSurvive and MarNet: worn on the life jacket, awake in the water, found because the ship has a place to turn toward.",
+  title: "The story: the one who went over the rail | MarNet",
+  description: "A scenario told so anyone can understand MarSurvive: worn on the life jacket, awake in the water, found because the boat has a place to turn toward.",
 };
 
 const chapters: Chapter[] = [
@@ -54,9 +54,9 @@ const chapters: Chapter[] = [
 
 const scenes = [
   { title: "The night watch", text: "It is dark. A deckhand goes over the side and nobody is looking at that piece of rail. The unit does not need anyone to look. The water is enough.", line: "The ship should not need a witness." },
+  { title: "The diver", text: "A scuba diver comes up in current, far from where they went down. MarSurvive on the dive vest gives the boat a light and a position, and the boat comes to them.", line: "Coming up should not be the dangerous part." },
+  { title: "The family trip", text: "A child and a dog on a ferry deck, each wearing a MarConnect band. If either goes in, the same point appears on the bridge.", line: "Safety cannot depend on experience." },
   { title: "Far offshore", text: "Out of reach of any gateway, a satellite unit sends its position directly. The search starts from a point, not from a last known heading.", line: "Distance is not an excuse." },
-  { title: "The family trip", text: "A child on a ferry deck, a small life vest, a wristband made for small arms. The same wake in the water, the same point on the bridge.", line: "Safety cannot depend on experience." },
-  { title: "The analog ship", text: "The hull is old. The engines were never meant to speak. MarNet gateways give the vessel a way to hear its people and carry the information ashore.", line: "You do not need a new ship to have a smarter one." },
 ];
 
 export default function StoryPage() {

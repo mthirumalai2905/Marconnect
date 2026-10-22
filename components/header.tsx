@@ -90,7 +90,7 @@ export function Header() {
       <header className={classes}>
         <Link className="chip logo-chip" href="/" onClick={toTop}>
           <Mark />
-          MarConnect
+          MarNet
         </Link>
         <nav className="nav-pill" aria-label="Pages">
           {links.map((link) => (

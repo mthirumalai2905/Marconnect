@@ -6,6 +6,11 @@ Use this file as the single place for what the company is, what the current webs
 
 Nothing in the **Proposed** sections is live yet. Do not publish a number, a range, a certification, a customer name, or a leadership title until it is marked **Verified**.
 
+> **Naming correction from the company (overrides anything below):**
+> - **MarNet is the company name.** It is the brand in the logo, titles and footer. The gateways are called "MarNet gateways".
+> - **MarConnect is the wristband for children and pets** (a wristband for kids, a collar band for pets).
+> - **MarSurvive is for scuba divers and everyone who works at sea** (fishermen, offshore, shipping), worn on the life jacket or the dive vest.
+>
 > **Product correction from the company (overrides anything below):**
 > - The main product is **MarSurvive**: a unit embedded in the life jacket, attached at the upper arm or the chest front. On contact with water it gives **light and position**.
 > - Two unit types: a **low-power radio unit** on 433 and 868 MHz, positioned by triangulation from gateways installed on the boat or on land, and a **satellite unit** with direct satellite communication.

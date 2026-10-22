@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Motto, NextPage, PageHero, PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "Industries: fishing, global shipping, offshore | MarConnect",
-  description: "The same two systems, one for the person and one for the ship, with a different first minute depending on the work.",
+  title: "Industries: fishing, diving, global shipping, offshore | MarNet",
+  description: "MarSurvive for divers and crews, MarConnect for children and pets, with a different first minute depending on the work.",
 };
 
 const industries = [
@@ -21,11 +21,23 @@ const industries = [
     alt: "A trawler at night with crew hauling nets in rough sea",
   },
   {
+    id: "diving",
+    title: "Diving",
+    kicker: "02 · The surface",
+    headline: "The dive ends where the boat cannot see.",
+    text: "Current, swell and failing light. A diver can come up a long way from where they went down, and a head in the waves is almost invisible from a deck. MarSurvive rides on the dive vest, so the boat gets a light to look for and a position to go to.",
+    first: "The boat steers toward a position instead of scanning the swell.",
+    points: ["Worn on the dive vest", "A light that can be seen at the surface", "Radio to the boat, or direct satellite far out"],
+    line: "Coming up should not be the dangerous part.",
+    image: "/img/diver-surface.jpg",
+    alt: "A scuba diver at the surface at dusk with the MarSurvive unit glowing on the dive vest",
+  },
+  {
     id: "shipping",
     title: "Global shipping",
-    kicker: "02 · Crew and passengers",
+    kicker: "03 · Crew and passengers",
     headline: "Big ships. Many people. One place that matters.",
-    text: "On a large vessel, finding a person is not only an overboard problem. On long ocean crossings, far from any gateway on land, the satellite unit reports its own position, and MarNet carries information across a ship that was never built to be digital, all the way to the bridge and the shore.",
+    text: "On a large vessel, finding a person is not only an overboard problem. On long ocean crossings, far from any gateway on land, the satellite unit reports its own position to the bridge and the shore, even from a ship that was never built to be digital.",
     first: "The bridge receives a position, not a sector of ocean to search by hand.",
     points: ["Direct satellite units for open ocean", "Ship-wide wireless across existing equipment", "Live information at sea and ashore"],
     line: "Safety cannot depend on experience.",
@@ -35,7 +47,7 @@ const industries = [
   {
     id: "offshore",
     title: "Offshore",
-    kicker: "03 · Steel to steel",
+    kicker: "04 · Steel to steel",
     headline: "The dangerous minute is the transfer.",
     text: "Baskets, gangways, swell and a gap of water between two structures. The unit is on the life jacket before the transfer. If the water takes someone, the light and the signal are already the start of the search.",
     first: "Search begins from a point, while the people nearby can still reach it.",
@@ -48,12 +60,12 @@ const industries = [
 
 export default function IndustriesPage() {
   return (
-    <PageShell close={{ kicker: "Your operation", title: "Tell us about the vessel.", text: "Fishing, shipping or offshore. We’ll talk about the first minute on your deck, and how the people on it can be found.", image: "/img/industry-shipping.jpg", alt: "A container ship at blue hour" }}>
+    <PageShell close={{ kicker: "Your operation", title: "Tell us about the vessel.", text: "Fishing, diving, shipping or offshore. We’ll talk about the first minute on your deck, and how the people on it can be found.", image: "/img/industry-shipping.jpg", alt: "A container ship at blue hour" }}>
       <PageHero
         crumb="Industries"
-        kicker="Three doors, one system"
+        kicker="Four doors, one idea"
         title={<>Built for the <span className="grad">hard work</span> at sea.</>}
-        lead="Fishing, global shipping and offshore buy for different reasons. The same two systems answer them all: one for the person, one for the ship."
+        lead="Fishing, diving, global shipping and offshore buy for different reasons. The same idea answers them all: worn in advance, found when it matters."
         image="/img/industry-shipping.jpg"
         alt="A container ship crossing open ocean at blue hour"
       />
@@ -97,12 +109,12 @@ export default function IndustriesPage() {
         <div className="note reveal">
           <p className="kicker">Also aboard</p>
           <p>
-            Passengers, guests who have never been cold at sea, and children, who get a wristband made for small arms. The unit does not ask how experienced the wearer is. It only has to be on before the water is.
+            Passengers, guests who have never been cold at sea, and families. Children and pets get MarConnect, a band made for small arms and collars. Nobody has to be experienced. The band only has to be on before the water is.
           </p>
         </div>
       </section>
 
-      <NextPage href="/products" label="Products" title="One for the person. One for the ship." image="/img/hero-unit.jpg" />
+      <NextPage href="/products" label="Products" title="For the ones at sea. For the ones you love." image="/img/hero-unit.jpg" />
     </PageShell>
   );
 }

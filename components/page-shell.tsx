@@ -54,7 +54,7 @@ export function PageHero({ crumb, parent, kicker, title, lead, image, alt, posit
   );
 }
 
-export function Motto({ line, by = "MarConnect", dark = false }: { line: string; by?: string; dark?: boolean }) {
+export function Motto({ line, by = "MarNet", dark = false }: { line: string; by?: string; dark?: boolean }) {
   return (
     <section className={dark ? "motto dark" : "motto"}>
       <ScrollFill className="motto-line" text={line} />

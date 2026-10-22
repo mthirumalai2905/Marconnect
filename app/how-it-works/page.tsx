@@ -3,8 +3,8 @@ import { Faq } from "@/components/faq";
 import { Motto, NextPage, PageHero, PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "How it works: wear, work, wake, reach | MarConnect",
-  description: "MarSurvive is on the life jacket. MarNet is on the ship. Four steps anyone can repeat, two ways to send a position, and why the unit stays off the wrist.",
+  title: "How it works: wear, work, wake, reach | MarNet",
+  description: "MarSurvive is on the life jacket or the dive vest. The gateways are on the boat. Four steps anyone can repeat, two ways to send a position, and why the unit stays off the wrist.",
 };
 
 const steps = [
@@ -43,7 +43,7 @@ const steps = [
 ];
 
 const path = [
-  { k: "01", t: "From the life jacket", d: "Water wakes the unit." },
+  { k: "01", t: "From the life jacket or vest", d: "The unit wakes." },
   { k: "02", t: "Light and signal", d: "A light for the eyes, a signal for the ship." },
   { k: "03", t: "To a gateway or satellite", d: "433 / 868 MHz radio, or direct satellite." },
   { k: "04", t: "A position", d: "Gateways triangulate. Satellite units report their own." },
@@ -68,9 +68,9 @@ export default function HowItWorksPage() {
     <PageShell close={{ kicker: "Start before the water", title: "Precaution is better than cure.", text: "Tell us about the vessel and the people on it. We’ll walk you through what the first minute could look like." }}>
       <PageHero
         crumb="How it works"
-        kicker="MarSurvive · MarNet"
+        kicker="MarSurvive · MarConnect"
         title={<>Four steps. <span className="grad">No manual required.</span></>}
-        lead="MarSurvive is on the life jacket. MarNet is on the ship. Someone who has never been to sea should be able to repeat it."
+        lead="MarSurvive is on the life jacket or the dive vest. The gateways are on the boat. Someone who has never been to sea should be able to repeat it."
         image="/img/ocean-signal.jpg"
         alt="Aerial view of a man in a life jacket in dark water, the unit on his chest glowing with signal rings"
       />
@@ -151,6 +151,21 @@ export default function HowItWorksPage() {
             <h2 className="h-lg reveal d1">The boat listens for its people.</h2>
             <p className="lead reveal d2">
               MarNet gateways are installed on the boat or on land. When a radio unit wakes, several gateways hear it and the position is triangulated between them. The vessel needs no new hull and no new bridge to know where its people are.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="wrap" id="divers-and-families" style={{ paddingTop: 0 }}>
+        <div className="split">
+          <figure className="split-media reveal">
+            <img src="/img/diver-surface.jpg" alt="A scuba diver at the surface at dusk with the MarSurvive unit glowing on the dive vest" />
+          </figure>
+          <div className="split-copy">
+            <p className="kicker reveal">Divers, children and pets</p>
+            <h2 className="h-lg reveal d1">The same four steps, other wearers.</h2>
+            <p className="lead reveal d2">
+              A scuba diver wears MarSurvive on the dive vest. If they come up far from the boat, it gives a light to look for and a position to go to. Children and pets wear MarConnect, a small wristband or a collar band, heard by the same gateways.
             </p>
           </div>
         </div>
