@@ -10,7 +10,7 @@ export function SiteFooter() {
         </div>
         <div>
           <h4>Products</h4>
-          <Link href="/products#marpersonnel">Marpersonnel</Link>
+          <Link href="/products#marsurvive">MarSurvive</Link>
           <Link href="/products#marnet">MarNet</Link>
           <Link href="/how-it-works">How it works</Link>
         </div>
@@ -30,7 +30,7 @@ export function SiteFooter() {
       <div className="wordmark" aria-hidden="true">MarConnect</div>
       <div className="fine">
         <span>© {new Date().getFullYear()} MarConnect AS</span>
-        <span>Imagery is illustrative. The diver sequence is a scenario.</span>
+        <span>Imagery is illustrative. The overboard story is a scenario.</span>
       </div>
     </footer>
   );

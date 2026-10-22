@@ -6,6 +6,13 @@ Use this file as the single place for what the company is, what the current webs
 
 Nothing in the **Proposed** sections is live yet. Do not publish a number, a range, a certification, a customer name, or a leadership title until it is marked **Verified**.
 
+> **Product correction from the company (overrides anything below):**
+> - The main product is **MarSurvive**: a unit embedded in the life jacket, attached at the upper arm or the chest front. On contact with water it gives **light and position**.
+> - Two unit types: a **low-power radio unit** on 433 and 868 MHz, positioned by triangulation from gateways installed on the boat or on land, and a **satellite unit** with direct satellite communication.
+> - The wristband is **not** the main product. Fishermen and workers avoid it because it can snag during hands-on work. The wristband is for **children only**.
+> - The partner is **Synx** (not Nornir) and the technology is **Morph Space** (not HIVE). The 2023 article is kept with these names.
+> - The website story is now a fisherman going overboard at night, not a diver. Health alerts and the digital fence belonged to the old wristband and are no longer claimed.
+
 ---
 
 ## 1. How to use this file

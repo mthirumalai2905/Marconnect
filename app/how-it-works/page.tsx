@@ -3,51 +3,64 @@ import { Faq } from "@/components/faq";
 import { Motto, NextPage, PageHero, PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "How it works: wear, sleep, wake, reach | MarConnect",
-  description: "Marpersonnel is on the person. MarNet is on the ship. Four steps anyone can repeat, the digital fence in plain words, and privacy by design.",
+  title: "How it works: wear, work, wake, reach | MarConnect",
+  description: "MarSurvive is on the life jacket. MarNet is on the ship. Four steps anyone can repeat, two ways to send a position, and why the unit stays off the wrist.",
 };
 
 const steps = [
   {
     title: "Wear",
     line: "Precaution is a decision you make while everyone is still safe.",
-    text: "The bracelet goes on before anyone enters the water: on deck, at the start of the shift, before the transfer or the dive. It is meant to be forgotten in the best way: worn like equipment, not handled like a gadget.",
-    points: ["Fastened before the risk, not after it", "Crew and passengers alike", "No training needed to be protected"],
+    text: "The MarSurvive unit is embedded in the life jacket, at the front of the chest or on the upper arm. It goes on with the jacket at the start of the shift, before the transfer, before anyone is near the rail. Worn like equipment, not handled like a gadget.",
+    points: ["Part of the life jacket, not an extra", "Chest front or upper arm", "No training needed to be protected"],
     image: "/img/step-wear.jpg",
-    alt: "Hands fastening the bracelet on a wet deck",
+    alt: "Gloved hands clipping the MarSurvive unit onto a life jacket on deck",
   },
   {
-    title: "Sleep",
-    line: "A life is not a data stream.",
-    text: "Through an ordinary working day the bracelet stays quiet. Marpersonnel is a sleep-wake system: it does not narrate where a healthy person walks, eats or rests. Data moves when there is an emergency.",
-    points: ["Silent during normal work", "Transmits in an emergency", "Privacy is behaviour, not a footer"],
+    title: "Work",
+    line: "Nothing on the wrist. Nothing to catch.",
+    text: "Fishermen and deck crew work with their hands, among lines, nets and winches. A device on the wrist can snag and turn into an accident of its own. On the life jacket, the unit stays out of the way, dark and silent, through an ordinary working day.",
+    points: ["Hands and wrists stay free", "Nothing to catch in a line or winch", "Silent during normal work"],
     image: "/img/step-sleep.jpg",
-    alt: "The bracelet resting dark on a wrist",
+    alt: "A fisherman hauling rope with the MarSurvive unit dark on his life jacket",
   },
   {
     title: "Wake",
-    line: "When it matters, it speaks.",
-    text: "Someone crosses the line the ship agreed is safe, or the system recognises another emergency, and the bracelet wakes. Irregular health activity can raise an alert too, without the system pretending to be a doctor.",
-    points: ["Automatic man-overboard detection", "Digital fence and smart parameters", "Notice of irregular health activity"],
+    line: "The water is the trigger.",
+    text: "The moment the unit comes into contact with water, it wakes. It switches on a light that can be seen in the dark and starts sending its position. Nobody has to press a button while fighting the sea.",
+    points: ["Activates on contact with water", "Light for the eyes", "Position for the ship"],
     image: "/img/step-wake.jpg",
-    alt: "The bracelet waking with a single blue light",
+    alt: "A life jacket hitting the water with the MarSurvive unit glowing blue",
   },
   {
     title: "Reach",
     line: "Location is a kindness if it arrives in time.",
-    text: "The crew is alerted. MarNet carries a precise, real-time position across the vessel and on to the people who can act, at sea and ashore. Search and rescue receives a place, not a sector.",
-    points: ["Crew alerted at once", "Live location for search and rescue", "Carried ship-wide by MarNet"],
+    text: "The crew is alerted. The bridge sees a position, not a sector, and the light guides the last metres. The same position can be shared with search and rescue, at sea and ashore.",
+    points: ["Crew alerted at once", "A position for search and rescue", "A light to guide the final approach"],
     image: "/img/step-reach.jpg",
-    alt: "A rescuer gripping the hand of a person in the water",
+    alt: "A rescuer gripping the arm of a person in a life jacket with a glowing unit",
   },
 ];
 
 const path = [
-  { k: "01", t: "From the wrist", d: "The bracelet wakes." },
-  { k: "02", t: "Through the water", d: "Rings of signal leave the person." },
-  { k: "03", t: "To the hull", d: "A MarNet node hears it." },
-  { k: "04", t: "Across the ship", d: "The network carries it." },
-  { k: "05", t: "Onto the bridge", d: "A name. A point. A direction." },
+  { k: "01", t: "From the life jacket", d: "Water wakes the unit." },
+  { k: "02", t: "Light and signal", d: "A light for the eyes, a signal for the ship." },
+  { k: "03", t: "To a gateway or satellite", d: "433 / 868 MHz radio, or direct satellite." },
+  { k: "04", t: "A position", d: "Gateways triangulate. Satellite units report their own." },
+  { k: "05", t: "Onto the bridge", d: "A person. A point. A direction." },
+];
+
+const units = [
+  {
+    k: "Radio unit",
+    t: "Low power, 433 and 868 MHz.",
+    d: "Gateways installed on the boat or on land hear the unit. Its position is triangulated from the gateways, so the ship knows where to turn without the unit having to carry heavy electronics.",
+  },
+  {
+    k: "Satellite unit",
+    t: "Direct satellite communication.",
+    d: "For work far from any gateway. The unit talks to satellites directly and reports its position on its own, wherever the vessel is.",
+  },
 ];
 
 export default function HowItWorksPage() {
@@ -55,11 +68,11 @@ export default function HowItWorksPage() {
     <PageShell close={{ kicker: "Start before the water", title: "Precaution is better than cure.", text: "Tell us about the vessel and the people on it. We’ll walk you through what the first minute could look like." }}>
       <PageHero
         crumb="How it works"
-        kicker="Marpersonnel · MarNet"
+        kicker="MarSurvive · MarNet"
         title={<>Four steps. <span className="grad">No manual required.</span></>}
-        lead="Marpersonnel is on the person. MarNet is on the ship. Someone who has never been to sea should be able to repeat it."
+        lead="MarSurvive is on the life jacket. MarNet is on the ship. Someone who has never been to sea should be able to repeat it."
         image="/img/ocean-signal.jpg"
-        alt="Aerial view of a person in dark water with blue signal rings spreading from the wrist"
+        alt="Aerial view of a man in a life jacket in dark water, the unit on his chest glowing with signal rings"
       />
 
       <section className="wrap">
@@ -92,7 +105,7 @@ export default function HowItWorksPage() {
             <p className="kicker reveal">The invisible part, made visible</p>
             <h2 className="h-lg reveal d1">How the signal travels.</h2>
           </div>
-          <p className="lead reveal d2">A child should get it: the person is lost, the bracelet calls the boat, the boat comes.</p>
+          <p className="lead reveal d2">A child should get it: the person falls in, the life jacket calls the boat, the boat comes.</p>
         </div>
         <ol className="path reveal d1">
           {path.map((node) => (
@@ -106,37 +119,44 @@ export default function HowItWorksPage() {
         </ol>
       </section>
 
-      <section className="wrap" id="fence">
+      <section className="wrap" id="units">
         <div className="split">
           <figure className="split-media reveal">
-            <img src="/img/industry-fishing.jpg" alt="Crew working on a trawler deck at night" />
+            <img src="/img/units.jpg" alt="The two MarSurvive units side by side: the radio unit and the satellite unit" />
           </figure>
           <div className="split-copy">
-            <p className="kicker reveal">The digital fence</p>
-            <h2 className="h-lg reveal d1">A line the ship already agreed is safe.</h2>
-            <p className="lead reveal d2">
-              The ship agrees a line. Inside it, people work. Outside it, someone may be in the water. Cross that line and the alert does not wait for a witness, or for the next round of the watch.
-            </p>
+            <p className="kicker reveal">Two unit types</p>
+            <h2 className="h-lg reveal d1">Gateway radio, or straight to the sky.</h2>
+            <dl className="spec plain reveal d2">
+              {units.map((unit) => (
+                <div key={unit.k}>
+                  <dt>{unit.k}</dt>
+                  <dd>
+                    <strong>{unit.t}</strong> {unit.d}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
 
-      <section className="wrap" id="privacy" style={{ paddingTop: 0 }}>
+      <section className="wrap" id="gateways" style={{ paddingTop: 0 }}>
         <div className="split flip">
           <figure className="split-media reveal">
-            <img src="/img/step-sleep.jpg" alt="The bracelet dark on a resting wrist" />
+            <img src="/img/gateway.jpg" alt="A MarNet gateway mounted on a fishing boat mast" />
           </figure>
           <div className="split-copy">
-            <p className="kicker reveal">Privacy</p>
-            <h2 className="h-lg reveal d1">It sleeps until a life is at stake.</h2>
+            <p className="kicker reveal">Gateways</p>
+            <h2 className="h-lg reveal d1">The boat listens for its people.</h2>
             <p className="lead reveal d2">
-              We care about the person wearing the device as much as the person buying it. Marpersonnel is a sleep-wake system. It transmits when there is an emergency. Privacy is not a checkbox. It is how the product behaves.
+              MarNet gateways are installed on the boat or on land. When a radio unit wakes, several gateways hear it and the position is triangulated between them. The vessel needs no new hull and no new bridge to know where its people are.
             </p>
           </div>
         </div>
       </section>
 
-      <Motto line="Cure begins with a shout. Precaution begins at the wrist." />
+      <Motto line="Cure begins with a shout. Precaution begins with the life jacket." />
 
       <section className="dark wrap" id="questions">
         <div className="faq">

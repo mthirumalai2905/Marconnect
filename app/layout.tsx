@@ -14,7 +14,7 @@ const interTight = Inter_Tight({
 export const metadata: Metadata = {
   title: "MarConnect | Life is the most valuable thing at sea",
   description:
-    "Norwegian maritime technology for wireless communication, health and safety. Marpersonnel finds the person. MarNet tells the ship.",
+    "Norwegian maritime safety technology. MarSurvive sits on the life jacket and wakes in the water with light and position. MarNet tells the ship.",
 };
 
 export const viewport: Viewport = {

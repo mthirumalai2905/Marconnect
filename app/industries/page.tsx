@@ -13,9 +13,9 @@ const industries = [
     title: "Fishing",
     kicker: "01 · A dark deck",
     headline: "The rail is where the night goes wrong.",
-    text: "Nets, weather, wet steel and short crews. When someone goes over in the dark, nobody may be looking at that piece of rail. The fence is agreed before the haul. Cross it, and the crew is told without waiting for a witness.",
-    first: "The alert starts the moment someone leaves the agreed line, not when the watch notices.",
-    points: ["Automatic man-overboard detection", "A digital fence agreed before the haul", "A live position the boat can turn toward"],
+    text: "Nets, weather, wet steel and short crews. Fishermen will not wear anything on the wrist that can catch in a line, so MarSurvive rides on the life jacket instead. When someone goes over in the dark, nobody may be looking at that piece of rail. The water is enough to wake the unit.",
+    first: "The light and the position start the moment the unit touches the sea, not when the watch notices.",
+    points: ["On the life jacket, never in the way of the work", "Wakes on contact with water", "Gateways on the boat triangulate the position"],
     line: "The ship should not need a witness.",
     image: "/img/industry-fishing.jpg",
     alt: "A trawler at night with crew hauling nets in rough sea",
@@ -25,9 +25,9 @@ const industries = [
     title: "Global shipping",
     kicker: "02 · Crew and passengers",
     headline: "Big ships. Many people. One place that matters.",
-    text: "On a large vessel, finding a person is not only an overboard problem. In an emergency the bracelet gives a precise, live location, and MarNet carries it across a ship that was never built to be digital, all the way to the bridge and the shore.",
-    first: "The bridge receives a name and a position, not a sector of ocean or a deck to search by hand.",
-    points: ["Real-time location of crew and passengers", "Ship-wide wireless across existing equipment", "Live information at sea and ashore"],
+    text: "On a large vessel, finding a person is not only an overboard problem. On long ocean crossings, far from any gateway on land, the satellite unit reports its own position, and MarNet carries information across a ship that was never built to be digital, all the way to the bridge and the shore.",
+    first: "The bridge receives a position, not a sector of ocean to search by hand.",
+    points: ["Direct satellite units for open ocean", "Ship-wide wireless across existing equipment", "Live information at sea and ashore"],
     line: "Safety cannot depend on experience.",
     image: "/img/industry-shipping.jpg",
     alt: "A container ship crossing open ocean at blue hour",
@@ -37,9 +37,9 @@ const industries = [
     title: "Offshore",
     kicker: "03 · Steel to steel",
     headline: "The dangerous minute is the transfer.",
-    text: "Baskets, gangways, swell and a gap of water between two structures. The bracelet is on before the transfer. If the water takes someone, the waking signal is already the start of the search.",
+    text: "Baskets, gangways, swell and a gap of water between two structures. The unit is on the life jacket before the transfer. If the water takes someone, the light and the signal are already the start of the search.",
     first: "Search begins from a point, while the people nearby can still reach it.",
-    points: ["Worn before every transfer", "Wakes in an emergency", "Position shared with those who can act"],
+    points: ["On the life jacket for every transfer", "Wakes on contact with water", "Gateways on the vessel or the platform"],
     line: "The best rescue starts before the panic.",
     image: "/img/industry-offshore.jpg",
     alt: "A personnel transfer basket swinging between a platform and a supply vessel",
@@ -97,12 +97,12 @@ export default function IndustriesPage() {
         <div className="note reveal">
           <p className="kicker">Also aboard</p>
           <p>
-            Divers, passengers, guests who have never been cold at sea. The bracelet does not ask how experienced the wearer is. It only has to be on before the water is.
+            Passengers, guests who have never been cold at sea, and children, who get a wristband made for small arms. The unit does not ask how experienced the wearer is. It only has to be on before the water is.
           </p>
         </div>
       </section>
 
-      <NextPage href="/products" label="Products" title="One for the person. One for the ship." image="/img/hero-bracelet.jpg" />
+      <NextPage href="/products" label="Products" title="One for the person. One for the ship." image="/img/hero-unit.jpg" />
     </PageShell>
   );
 }

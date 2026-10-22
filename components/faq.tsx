@@ -4,23 +4,27 @@ import { useState } from "react";
 
 const items = [
   {
-    q: "What does Marpersonnel do?",
-    a: "It is a smart bracelet for crew and passengers. In an emergency it gives a precise, real-time location, detects man overboard, and can alert the crew to irregular health activity.",
+    q: "What does MarSurvive do?",
+    a: "It is a safety unit embedded in the life jacket, worn at the chest or upper arm. When it comes into contact with water it switches on a light and sends its position, so the crew and search and rescue know where to go.",
+  },
+  {
+    q: "Why not a wristband?",
+    a: "Fishermen and deck crew work with their hands, around lines, nets and winches. Anything on the wrist can catch and cause an accident. On the life jacket the unit stays out of the way. The wristband version is made for children.",
+  },
+  {
+    q: "What is the difference between the two units?",
+    a: "The radio unit is low power and works on 433 and 868 MHz. Its position is triangulated by gateways installed on the boat or on land. The satellite unit talks to satellites directly, so it reports its position even far from any gateway.",
   },
   {
     q: "What does MarNet do?",
-    a: "It is the shipboard network. Sensors give decision makers live information, and existing machinery and equipment can speak to each other, so an analog vessel becomes a smarter one.",
+    a: "It is the shipboard network. Gateways hear the radio units and place them on the water, and sensors give decision makers live information, so an analog vessel becomes a smarter one.",
   },
   {
-    q: "When does the bracelet send data?",
-    a: "It is a sleep-wake system. Ordinary life stays on the wrist. It transmits when there is an emergency. Privacy is how the product behaves, not a line in a footer.",
+    q: "When does the unit send data?",
+    a: "When it gets wet. During an ordinary shift it stays dark and silent. Contact with water is what wakes it, and that is when it starts sending a position.",
   },
   {
-    q: "What is the digital fence?",
-    a: "The ship agrees a line. Inside it, people work. Cross it, and the alert does not wait for someone to notice.",
-  },
-  {
-    q: "Is the diver a real rescue?",
+    q: "Is the overboard story a real rescue?",
     a: "It is a scenario, told so anyone can see the idea: worn in advance, awake in the water, found because the ship has a place to turn toward. A true rescue will be told only with permission.",
   },
   {

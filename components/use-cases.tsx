@@ -10,7 +10,7 @@ export const cases = [
     image: "/img/industry-fishing.jpg",
     alt: "A trawler at night with crew hauling nets in rough sea",
     note: "A dark deck. A rail. A person who should still be on it.",
-    body: "The fence is agreed before the haul. If someone crosses it, the crew is told without waiting for a witness.",
+    body: "The unit rides on the life jacket, not the wrist, so it never catches in a net. If someone goes over, it wakes in the water and the crew is told without waiting for a witness.",
   },
   {
     slug: "shipping",
@@ -18,7 +18,7 @@ export const cases = [
     image: "/img/industry-shipping.jpg",
     alt: "A container ship crossing open ocean at blue hour",
     note: "Crew and passengers. A place, not a rumour.",
-    body: "In an emergency the bracelet gives a live location. MarNet carries it across a ship that was never built to be digital.",
+    body: "A crew member in the water is a light and a position. MarNet gateways place them, even on a ship that was never built to be digital.",
   },
   {
     slug: "offshore",
@@ -26,7 +26,7 @@ export const cases = [
     image: "/img/industry-offshore.jpg",
     alt: "A personnel transfer basket swinging between a platform and a supply vessel",
     note: "The minute between steel and steel.",
-    body: "The bracelet is on before the transfer. If the water takes someone, the waking signal is already the start of the search.",
+    body: "The unit is on the life jacket before the transfer. If the water takes someone, the signal is already the start of the search.",
   },
 ];
 
